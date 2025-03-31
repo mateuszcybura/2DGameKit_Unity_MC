@@ -247,7 +247,7 @@ public class AudioManager : MonoBehaviour
             else
             {
                 pauseSnapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                UnPauseBuses();
+                PauseBuses(false);
                 Debug.Log("Game unpaused, unpausing SFX and VOICE events");
 
                 // Stop the coroutine if it is running
@@ -272,7 +272,7 @@ public class AudioManager : MonoBehaviour
 
             if (vcaFinalVolume <= MIN_VOLUME_THRESHOLD)
             {
-                PauseBuses();
+                PauseBuses(true);
                 pauseCheckCoroutine = null; // Mark coroutine as completed
                 yield break; // Stop the coroutine
             }
@@ -285,17 +285,12 @@ public class AudioManager : MonoBehaviour
         pauseCheckCoroutine = null; // Clean up
     }
 
-    private void PauseBuses()
+    private void PauseBuses(bool paused)
     {
-        buses["SFX"].setPaused(true);
-        buses["Voice"].setPaused(true);
-        Debug.Log("Pausing SFX and VOICE events");
+        buses["SFX"].setPaused(paused);
+        buses["Voice"].setPaused(paused);
+        Debug.Log("SFX and VOICE events pause state: ");
     }
 
-    private void UnPauseBuses()
-    {
-        buses["SFX"].setPaused(false);
-        buses["Voice"].setPaused(false);
-    }
     #endregion
 }

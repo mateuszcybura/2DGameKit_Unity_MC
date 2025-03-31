@@ -7,7 +7,28 @@ using UnityEngine.Tilemaps;
 
 public class PlayerAudio : MonoBehaviour
 {
+    //private string surfaceOld;
 
+    [Header("FMOD Events for player")]
+    public EventReference footstepEvent;
+    public EventReference jumpEvent;
+    public EventReference landEvent;
+    public EventReference staffSwingEvent;
+    public EventReference rangedPistolShotEvent;
+    public EventReference painEvent;
+    public EventReference deathEvent;
+
+    // Event instances
+    public EventInstance footstepInstance;
+    public EventInstance jumpInstance;
+    public EventInstance landInstance;
+    public EventInstance staffSwingInstance;
+    public EventInstance rangedPistolShotInstance;
+    public EventInstance painInstance;
+    public EventInstance deathInstance;
+
+    // Variable for storing position of the game object
+    private FMOD.ATTRIBUTES_3D attributes3d;
 
     // Start is called before the first frame update
     void Start()
@@ -71,29 +92,6 @@ public class PlayerAudio : MonoBehaviour
         painInstance.release();
         deathInstance.release();
     }
-
-    //private string surfaceOld;
-
-    [Header("FMOD Events for player")]
-    public EventReference footstepEvent;
-    public EventReference jumpEvent;
-    public EventReference landEvent;
-    public EventReference staffSwingEvent;
-    public EventReference rangedPistolShotEvent;
-    public EventReference painEvent;
-    public EventReference deathEvent;
-
-    // Event instances
-    public EventInstance footstepInstance;
-    public EventInstance jumpInstance;
-    public EventInstance landInstance;
-    public EventInstance staffSwingInstance;
-    public EventInstance rangedPistolShotInstance;
-    public EventInstance painInstance;
-    public EventInstance deathInstance;
-
-    // Variable for storing position of the game object
-    private FMOD.ATTRIBUTES_3D attributes3d;
 
     /// <summary>
     /// Plays a footstep sound.

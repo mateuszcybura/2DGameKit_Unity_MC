@@ -208,6 +208,8 @@ public class MissileGolem : MonoBehaviour
         shieldDamageable.SetHealth(rounds[round - 1].shieldHP);
         shieldSlider.maxValue = rounds[round - 1].shieldHP;
         shieldSlider.value = shieldSlider.maxValue;
+
+        bossAudio.SetBossShieldParameter(shield.GetComponent<Damageable>().CurrentHealth);
     }
 
     void FireLaser()
@@ -276,6 +278,8 @@ public class MissileGolem : MonoBehaviour
         shieldSlider.GetComponent<Animator>().Play("BossShieldDefeat");
         healthSlider.GetComponent<Animator>().Play("BossHealthDefeat");
 
+        bossAudio.SetBossRoundParameter(4);
+
         BackgroundMusicPlayer.Instance.ChangeMusic(postBossClip);
         BackgroundMusicPlayer.Instance.PushClip(bossDeathClip);
 
@@ -338,12 +342,14 @@ public class MissileGolem : MonoBehaviour
 
         if (round == 2)
         {
+            bossAudio.SetBossRoundParameter(2);
             roundDeathSource.clip = startRound2Clip;
             roundDeathSource.loop = true;
             roundDeathSource.Play();
         }
         else if (round == 3)
         {
+            bossAudio.SetBossRoundParameter(3);
             roundDeathSource.clip = startRound3Clip;
             roundDeathSource.loop = true;
             roundDeathSource.Play();
@@ -363,9 +369,12 @@ public class MissileGolem : MonoBehaviour
     public void Damaged(Damager damager, Damageable damageable)
     {
         takingDamage.PlayRandomSound();
+        bossAudio.gunnerHurtEmitter.Play();
 
         m_CurrentHealth -= damager.damage;
         healthSlider.value = m_CurrentHealth;
+
+        bossAudio.SetBossHealthParameter(m_CurrentHealth);
     }
 
     public void ShieldDown()
@@ -377,6 +386,7 @@ public class MissileGolem : MonoBehaviour
     public void ShieldHit()
     {
         shieldSlider.value = shield.GetComponent<Damageable>().CurrentHealth;
+        bossAudio.SetBossShieldParameter(shield.GetComponent<Damageable>().CurrentHealth);
     }
 
     public void PlayStep()
