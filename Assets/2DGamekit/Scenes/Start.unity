@@ -442,7 +442,7 @@ MonoBehaviour:
       Data4: -2144427263
     Path: event:/UI/ui_OnPointerEnter
   Event: 
-  EventPlayTrigger: 17
+  EventPlayTrigger: 13
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -15873,7 +15873,7 @@ MonoBehaviour:
       Data4: -2144427263
     Path: event:/UI/ui_OnPointerEnter
   Event: 
-  EventPlayTrigger: 17
+  EventPlayTrigger: 13
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -28380,7 +28380,8 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3901091401450782530, guid: 12c2177bf06bbee44b65f5e185b2216f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

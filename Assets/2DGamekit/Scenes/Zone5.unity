@@ -2441,7 +2441,7 @@ PrefabInstance:
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Path
-      value: event:/_Utilities/Test Events/test_empty_action
+      value: event:/MUSIC/Zone05/msc_zone05
       objectReference: {fileID: 0}
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
@@ -2456,22 +2456,22 @@ PrefabInstance:
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: -751622519
+      value: -2079592606
       objectReference: {fileID: 0}
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1309741784
+      value: 1201942829
       objectReference: {fileID: 0}
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: 1705871511
+      value: 611466908
       objectReference: {fileID: 0}
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: 1355061229
+      value: -961418968
       objectReference: {fileID: 0}
     - target: {fileID: 2271497964563696714, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
@@ -2526,7 +2526,7 @@ PrefabInstance:
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Path
-      value: event:/_Utilities/Test Events/test_empty_action
+      value: event:/MUSIC/Zone05/msc_zone05
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
@@ -2541,22 +2541,22 @@ PrefabInstance:
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: -751622519
+      value: -2079592606
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1309741784
+      value: 1201942829
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: 1705871511
+      value: 611466908
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: 1355061229
+      value: -961418968
       objectReference: {fileID: 0}
     - target: {fileID: 6752647133089806002, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
@@ -4513,60 +4513,60 @@ MonoBehaviour:
     Path: event:/SFX/ENEMIES/Gunner/sfx_enm_gunner_fs
   gunnerIdleEvent:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 959772459
+      Data2: 1274977415
+      Data3: 872821431
+      Data4: 1709147610
+    Path: event:/SFX/ENEMIES/Gunner/sfx_enm_gunner_idle
   gunnerLaserAttackEvent:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 1986693153
+      Data2: 1098368351
+      Data3: 567060880
+      Data4: 1903096073
+    Path: event:/SFX/ENEMIES/Gunner/sfx_enm_gunner_beam
   gunnerGrenadeThrowEvent:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 1867160521
+      Data2: 1103432668
+      Data3: 1750910605
+      Data4: 33122985
+    Path: event:/SFX/ENEMIES/Gunner/sfx_enm_gunner_grenade
   gunnerLightningAttackEvent:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 131372854
+      Data2: 1197374531
+      Data3: -1381118844
+      Data4: 878474162
+    Path: event:/SFX/ENEMIES/Gunner/sfx_enm_gunner_lightning
   gunnerLaserHitEvent:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   gunnerHurtEvent:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   gunnerDeathEvent:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: -1567581043
+      Data2: 1083637103
+      Data3: 1486774941
+      Data4: -1957405474
+    Path: event:/SFX/ENEMIES/Gunner/sfx_enm_gunner_death
   gunnerDeathBeamEvent:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   gunnerStepEmitter: {fileID: 846088712}
   gunnerIdleEmitter: {fileID: 1764488594}
   gunnerLaserAttackEmitter: {fileID: 1114278615}
@@ -53516,11 +53516,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1525397205
-      Data2: 1166497846
-      Data3: -710403939
-      Data4: -1276941439
-    Path: event:/SFX/ENVIRONMENT/Interactables/Info Post/sfx_env_infoPost_lp
+      Data1: -1429222898
+      Data2: 1298875967
+      Data3: -155201624
+      Data4: -996668061
+    Path: event:/SFX/ENVIRONMENT/Zone05/Portal/sfx_portal_lp
   Event: 
   EventPlayTrigger: 9
   EventStopTrigger: 10

@@ -5312,11 +5312,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 497222915
+      Data2: 1074349758
+      Data3: -21012805
+      Data4: 520634733
+    Path: event:/SFX/ENVIRONMENT/Projectile/Enemies/Gunner/sfx_env_enm_gunner_projectile_lp
   Event: 
   EventPlayTrigger: 11
   EventStopTrigger: 12

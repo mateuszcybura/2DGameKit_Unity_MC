@@ -22250,7 +22250,7 @@ PrefabInstance:
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
       propertyPath: EventReference.Path
-      value: event:/SFX/ENVIRONMENT/Zone01/sfx_env_zone01_shipSteam
+      value: event:/SFX/ENVIRONMENT/Zone01/ship/sfx_env_ship_steam
       objectReference: {fileID: 0}
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
@@ -22265,22 +22265,22 @@ PrefabInstance:
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: -1418012386
+      value: 1871893877
       objectReference: {fileID: 0}
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1320473856
+      value: 1261091520
       objectReference: {fileID: 0}
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: 1126353826
+      value: 820508038
       objectReference: {fileID: 0}
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: -264437950
+      value: 1956456616
       objectReference: {fileID: 0}
     - target: {fileID: 5456375050904781880, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
