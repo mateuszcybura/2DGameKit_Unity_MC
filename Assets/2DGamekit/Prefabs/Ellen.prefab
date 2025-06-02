@@ -719,6 +719,13 @@ MonoBehaviour:
       Data3: 1110742661
       Data4: 880925127
     Path: event:/SFX/PLAYER/Locomotion/sfx_plr_loc_jump
+  fallEvent:
+    Guid:
+      Data1: -448225934
+      Data2: 1206822725
+      Data3: 643070597
+      Data4: -289440078
+    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
   landEvent:
     Guid:
       Data1: 1809872070
@@ -801,7 +808,6 @@ GameObject:
   - component: {fileID: 4043387964200818}
   - component: {fileID: 82712550983269672}
   - component: {fileID: 114293955134965878}
-  - component: {fileID: 7696770850858275955}
   m_Layer: 13
   m_Name: FootstepSource
   m_TagString: Untagged
@@ -947,25 +953,6 @@ MonoBehaviour:
     - {fileID: 8300000, guid: e281a04ebe0d51140b84708ae79a756c, type: 3}
   randomizePitch: 1
   pitchRange: 0.3
---- !u!114 &7696770850858275955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1184178472015166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0a7be434faf334c9902b4969f72d51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioObject:
-    Guid:
-      Data1: 889098437
-      Data2: 1081048159
-      Data3: -900217984
-      Data4: -199755066
-    Path: event:/SFX/PLAYER/Locomotion/sfx_plr_loc_fs
 --- !u!1 &1228154595269142
 GameObject:
   m_ObjectHideFlags: 0

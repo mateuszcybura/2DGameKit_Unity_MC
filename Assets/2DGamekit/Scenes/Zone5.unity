@@ -2440,6 +2440,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
+        type: 3}
       propertyPath: EventReference.Path
       value: event:/_Utilities/Test Events/test_empty_action
       objectReference: {fileID: 0}
@@ -2526,7 +2531,7 @@ PrefabInstance:
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Path
-      value: event:/_Utilities/Test Events/test_empty_action
+      value: event:/MUSIC/Zone05/msc_zone05
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
@@ -2541,22 +2546,22 @@ PrefabInstance:
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: -751622519
+      value: -2079592606
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1309741784
+      value: 1201942829
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: 1705871511
+      value: 611466908
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: 1355061229
+      value: -961418968
       objectReference: {fileID: 0}
     - target: {fileID: 6752647133089806002, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
@@ -53516,11 +53521,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1525397205
-      Data2: 1166497846
-      Data3: -710403939
-      Data4: -1276941439
-    Path: event:/SFX/ENVIRONMENT/Interactables/Info Post/sfx_env_infoPost_lp
+      Data1: -1429222898
+      Data2: 1298875967
+      Data3: -155201624
+      Data4: -996668061
+    Path: event:/SFX/ENVIRONMENT/Zone05/Portal/sfx_portal_lp
   Event: 
   EventPlayTrigger: 9
   EventStopTrigger: 10

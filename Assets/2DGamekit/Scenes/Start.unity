@@ -2897,6 +2897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589167492}
   - component: {fileID: 589167491}
+  - component: {fileID: 589167493}
   m_Layer: 0
   m_Name: FMODMainMenuMusic
   m_TagString: Untagged
@@ -2919,14 +2920,14 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -732042790
-      Data2: 1314960684
-      Data3: -1759544152
-      Data4: -1087206678
-    Path: event:/MUSIC/Main Menu/mus_mainMenu
+      Data1: 2099291012
+      Data2: 1168154930
+      Data3: -478067540
+      Data4: 1091312133
+    Path: event:/MUSIC/MainMenu_Zone1/msc_mmenu_zone01_02_03
   Event: 
   EventPlayTrigger: 11
-  EventStopTrigger: 12
+  EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -2950,6 +2951,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &589167493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589167490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Zone
+  TriggerEvent: 1
+  Value: 0
 --- !u!1 &616697226
 GameObject:
   m_ObjectHideFlags: 0

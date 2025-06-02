@@ -406,11 +406,13 @@ namespace Gamekit2D
 
             if (faceLeft)
             {
+                //playerAudio.PlayFootstep();
                 spriteRenderer.flipX = !spriteOriginallyFacesLeft;
                 m_CurrentBulletSpawnPoint = facingLeftBulletSpawnPoint;
             }
             else if (faceRight)
             {
+                //playerAudio.PlayFootstep();
                 spriteRenderer.flipX = spriteOriginallyFacesLeft;
                 m_CurrentBulletSpawnPoint = facingRightBulletSpawnPoint;
             }
@@ -418,13 +420,16 @@ namespace Gamekit2D
 
         public void UpdateFacing(bool faceLeft)
         {
+
             if (faceLeft)
             {
+                //playerAudio.PlayFootstep();
                 spriteRenderer.flipX = !spriteOriginallyFacesLeft;
                 m_CurrentBulletSpawnPoint = facingLeftBulletSpawnPoint;
             }
             else
             {
+                //playerAudio.PlayFootstep();
                 spriteRenderer.flipX = spriteOriginallyFacesLeft;
                 m_CurrentBulletSpawnPoint = facingRightBulletSpawnPoint;
             }
@@ -589,6 +594,7 @@ namespace Gamekit2D
 
         public bool CheckForFallInput()
         {
+            playerAudio.PlayFall();
             return PlayerInput.Instance.Vertical.Value < -float.Epsilon && PlayerInput.Instance.Jump.Down;
         }
 

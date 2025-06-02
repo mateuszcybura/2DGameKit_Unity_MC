@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 82291196359177542}
   - component: {fileID: 114149700317922388}
   - component: {fileID: 2048646679429880630}
+  - component: {fileID: 2468189597013095937}
   m_Layer: 31
   m_Name: PressurePad
   m_TagString: Untagged
@@ -345,6 +346,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2468189597013095937}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   OnRelease:
     m_PersistentCalls:
       m_Calls:
@@ -373,6 +386,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2468189597013095937}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2048646679429880630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,13 +413,44 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: -827249419
+      Data2: 1322922602
+      Data3: -1378027136
+      Data4: 997719912
+    Path: event:/SFX/ENVIRONMENT/Interactables/Pressure Plate/sfx_env_pressure_plate_on
   Event: 
   EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2468189597013095937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791080144770444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1230970795
+      Data2: 1150029246
+      Data3: 890161573
+      Data4: -413114718
+    Path: event:/SFX/ENVIRONMENT/Interactables/Pressure Plate/sfx_env_pressure_plate_off
+  Event: 
+  EventPlayTrigger: 12
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0

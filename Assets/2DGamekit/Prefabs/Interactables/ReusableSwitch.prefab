@@ -338,11 +338,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 979464260
+      Data2: 1296800200
+      Data3: 1099137703
+      Data4: -984564874
+    Path: event:/SFX/ENVIRONMENT/Interactables/Lamps/sfx_env_lamp_activation
   Event: 
   EventPlayTrigger: 11
   EventStopTrigger: 0

@@ -4999,11 +4999,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 146087105
+      Data2: 1122985784
+      Data3: 1474773913
+      Data4: -33941198
+    Path: event:/SFX/PLAYER/sfx_plr_spawn
   Event: 
   EventPlayTrigger: 11
   EventStopTrigger: 0
