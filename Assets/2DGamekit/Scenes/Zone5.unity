@@ -2440,6 +2440,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
+        type: 3}
       propertyPath: EventReference.Path
       value: event:/MUSIC/Zone05/msc_zone05
       objectReference: {fileID: 0}

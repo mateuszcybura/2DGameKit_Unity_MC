@@ -48174,6 +48174,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
+        type: 3}
       propertyPath: EventReference.Path
       value: event:/AMBIENCE/Zone01/amb_zone01
       objectReference: {fileID: 0}
@@ -48270,12 +48275,12 @@ PrefabInstance:
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventStopTrigger
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Path
-      value: event:/MUSIC/Zone01/mus_zone01
+      value: event:/MUSIC/MainMenu_Zone1/msc_mmenu_zone01_02_03
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
@@ -48290,22 +48295,22 @@ PrefabInstance:
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: 1870283182
+      value: 2099291012
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1130628658
+      value: 1168154930
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: -1245909113
+      value: -478067540
       objectReference: {fileID: 0}
     - target: {fileID: 5042400479245583912, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: 956059960
+      value: 1091312133
       objectReference: {fileID: 0}
     - target: {fileID: 6752647133089806002, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
@@ -48320,8 +48325,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6752647133089806002, guid: 9110199ae62c01f42bb440a3b1e2d769,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2093495050}
   m_SourcePrefab: {fileID: 100100000, guid: 9110199ae62c01f42bb440a3b1e2d769, type: 3}
+--- !u!1 &2093495049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6752647133089806002, guid: 9110199ae62c01f42bb440a3b1e2d769,
+    type: 3}
+  m_PrefabInstance: {fileID: 2093495048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2093495050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093495049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Zone
+  TriggerEvent: 1
+  Value: 1
 --- !u!1 &2102841676 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1239464407698750, guid: 73360cdb4e1e7ed4897690f9d57fd0eb,

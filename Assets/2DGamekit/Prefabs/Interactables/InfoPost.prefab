@@ -5342,6 +5342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1122226340156132922}
   - component: {fileID: 1312879657396931685}
+  - component: {fileID: 1200947946463360573}
   m_Layer: 15
   m_Name: FMODAudioObject-LampOn
   m_TagString: Untagged
@@ -5379,14 +5380,45 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 787657416
-      Data2: 1100049348
-      Data3: -2116453986
-      Data4: -2050086851
+      Data1: -1587033394
+      Data2: 1209325717
+      Data3: 386854293
+      Data4: -661399092
     Path: event:/SFX/ENVIRONMENT/Interactables/Info Post/sfx_env_infoPost_light_on
   Event: 
   EventPlayTrigger: 11
   EventStopTrigger: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1200947946463360573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4234112647627967976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1796858965
+      Data2: 1224977233
+      Data3: -1925070418
+      Data4: -506002984
+    Path: event:/SFX/ENVIRONMENT/Interactables/Info Post/sfx_env_infoPost_light_off
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 11
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

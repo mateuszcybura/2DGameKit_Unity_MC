@@ -185,11 +185,11 @@ public class AudioManager : MonoBehaviour
         {
             if (detectedByMonster)
             {
-                AudioManager.Instance.SetGlobalParameter("ThreatLevel", 1f);
+                Instance.SetGlobalParameter("ThreatLevel", 1f);
             }
             else
             {
-                AudioManager.Instance.SetGlobalParameter("ThreatLevel", 0f);
+                Instance.SetGlobalParameter("ThreatLevel", 0f);
             }
 
             detectedByMonsterOld = detectedByMonster;

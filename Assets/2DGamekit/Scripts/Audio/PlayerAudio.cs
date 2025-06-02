@@ -12,6 +12,7 @@ public class PlayerAudio : MonoBehaviour
     [Header("FMOD Events for player")]
     public EventReference footstepEvent;
     public EventReference jumpEvent;
+    public EventReference fallEvent;
     public EventReference landEvent;
     public EventReference staffSwingEvent;
     public EventReference rangedPistolShotEvent;
@@ -21,11 +22,18 @@ public class PlayerAudio : MonoBehaviour
     // Event instances
     public EventInstance footstepInstance;
     public EventInstance jumpInstance;
+    public EventInstance fallInstance;
     public EventInstance landInstance;
     public EventInstance staffSwingInstance;
     public EventInstance rangedPistolShotInstance;
     public EventInstance painInstance;
     public EventInstance deathInstance;
+
+    // Game Object refs
+    //public GameObject footstepAudioSource;
+    //public GameObject staffSwingAudioSource;
+    //public GameObject rangedPistolAudioSource;
+    //public GameObject voiceAudioSource;
 
     // Variable for storing position of the game object
     private FMOD.ATTRIBUTES_3D attributes3d;
@@ -36,6 +44,7 @@ public class PlayerAudio : MonoBehaviour
         // Instantiating FMOD events
         footstepInstance = RuntimeManager.CreateInstance(footstepEvent);
         jumpInstance = RuntimeManager.CreateInstance(jumpEvent);
+        fallInstance = RuntimeManager.CreateInstance(fallEvent);
         landInstance = RuntimeManager.CreateInstance(landEvent);
         staffSwingInstance = RuntimeManager.CreateInstance(staffSwingEvent);
         rangedPistolShotInstance = RuntimeManager.CreateInstance(rangedPistolShotEvent);
@@ -52,6 +61,7 @@ public class PlayerAudio : MonoBehaviour
         // Updating instance's position
         footstepInstance.set3DAttributes(attributes3d);
         jumpInstance.set3DAttributes(attributes3d);
+        fallInstance.set3DAttributes(attributes3d);
         landInstance.set3DAttributes(attributes3d);
         staffSwingInstance.set3DAttributes(attributes3d);
         rangedPistolShotInstance.set3DAttributes(attributes3d);
@@ -75,6 +85,7 @@ public class PlayerAudio : MonoBehaviour
     {
         footstepInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         jumpInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        fallInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         landInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         staffSwingInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         rangedPistolShotInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
@@ -86,6 +97,7 @@ public class PlayerAudio : MonoBehaviour
     {
         footstepInstance.release();
         jumpInstance.release();
+        fallInstance.release();
         landInstance.release();
         staffSwingInstance.release();
         rangedPistolShotInstance.release();
@@ -113,10 +125,6 @@ public class PlayerAudio : MonoBehaviour
             }
         }
 
-        //Debug.Log(transform.position);
-        // Plays a one-shot sound at the player's current position.
-        //AudioManager.Instance.PlaySound(footstepEvent, transform.position);
-
         footstepInstance.start();
     }
 
@@ -125,9 +133,12 @@ public class PlayerAudio : MonoBehaviour
     /// </summary>
     public void PlayJump()
     {
-        //AudioManager.Instance.PlaySound(jumpEvent, transform.position);
-
         jumpInstance.start();
+    }
+
+    public void PlayFall()
+    {
+        fallInstance.start();
     }
 
     /// <summary>
@@ -142,7 +153,6 @@ public class PlayerAudio : MonoBehaviour
 
             if (surfaceString == "TilesetRockRules (UnityEngine.RuleTile)")
             {
-                //setParameterByName("PlrFloorType", 1f);
                 landInstance.setParameterByName("FloorType", 0f);
             }
             else
@@ -150,8 +160,6 @@ public class PlayerAudio : MonoBehaviour
                 landInstance.setParameterByName("FloorType", 1f);
             }
         }
-
-        //AudioManager.Instance.PlaySound(landEvent, transform.position);
 
         landInstance.start();
     }
@@ -161,7 +169,6 @@ public class PlayerAudio : MonoBehaviour
     /// </summary>
     public void PlayStaffSwing()
     {
-        //AudioManager.Instance.PlaySound(staffSwingEvent, transform.position);
         staffSwingInstance.start();
     }
 
@@ -170,7 +177,6 @@ public class PlayerAudio : MonoBehaviour
     /// </summary>
     public void PlayRangedPistolShot()
     {
-        //AudioManager.Instance.PlaySound(rangedPistolShotEvent, transform.position);
         rangedPistolShotInstance.start();
     }
 
@@ -179,7 +185,6 @@ public class PlayerAudio : MonoBehaviour
     /// </summary>
     public void PlayPain()
     {
-        //AudioManager.Instance.PlaySound(painEvent, transform.position);
         painInstance.start();
     }
 
@@ -188,7 +193,6 @@ public class PlayerAudio : MonoBehaviour
     /// </summary>
     public void PlayDeath()
     {
-        //AudioManager.Instance.PlaySound(deathEvent, transform.position);
         deathInstance.start();
     }
 }

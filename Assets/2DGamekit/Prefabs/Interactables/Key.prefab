@@ -4876,7 +4876,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4520692980973648}
   - component: {fileID: 82609891197987826}
-  - component: {fileID: 6959983531465545227}
+  - component: {fileID: 7500882887756240878}
   m_Layer: 0
   m_Name: PickUpEffect
   m_TagString: Untagged
@@ -4996,7 +4996,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &6959983531465545227
+--- !u!114 &7500882887756240878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14682,6 +14682,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19589,6 +19590,7 @@ GameObject:
   - component: {fileID: 212334846230632610}
   - component: {fileID: 95529108578994780}
   - component: {fileID: 58802698708281874}
+  - component: {fileID: 8219273534300952403}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -19612,7 +19614,6 @@ Transform:
   - {fileID: 4640411364720958}
   - {fileID: 4368786207637268}
   - {fileID: 4391954711540346}
-  - {fileID: 4780721095409627346}
   - {fileID: 4520692980973648}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19724,6 +19725,37 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &8219273534300952403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795441750572142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1077632704
+      Data2: 1160656390
+      Data3: 674400684
+      Data4: 89312687
+    Path: event:/SFX/ENVIRONMENT/Interactables/Keys/sfx_env_key_lp
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1989362093448838
 GameObject:
   m_ObjectHideFlags: 0
@@ -19828,66 +19860,3 @@ MonoBehaviour:
   levelLayermask:
     serializedVersion: 2
     m_Bits: 2147483648
---- !u!1 &5361408778527542632
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4780721095409627346}
-  - component: {fileID: 2907359592437466721}
-  m_Layer: 0
-  m_Name: FMODAudio_lp
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4780721095409627346
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5361408778527542632}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4684060711274288}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2907359592437466721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5361408778527542632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1077632704
-      Data2: 1160656390
-      Data3: 674400684
-      Data4: 89312687
-    Path: event:/SFX/ENVIRONMENT/Interactables/Keys/sfx_env_key_lp
-  Event: 
-  EventPlayTrigger: 11
-  EventStopTrigger: 12
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20

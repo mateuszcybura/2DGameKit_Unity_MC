@@ -47,6 +47,8 @@ namespace Gamekit2D
             PersistentDataManager.RegisterPersister(this);
             m_CurrentHealth = startingHealth;
 
+            AudioManager.Instance.SetGlobalParameter("Player_Health", m_CurrentHealth);
+
             OnHealthSet.Invoke(this);
 
             DisableInvulnerability();
@@ -97,6 +99,7 @@ namespace Gamekit2D
             if (!m_Invulnerable)
             {
                 m_CurrentHealth -= damager.damage;
+                AudioManager.Instance.SetGlobalParameter("Player_Health", m_CurrentHealth);
                 OnHealthSet.Invoke(this);
             }
 
@@ -120,6 +123,8 @@ namespace Gamekit2D
             if (m_CurrentHealth > startingHealth)
                 m_CurrentHealth = startingHealth;
 
+            AudioManager.Instance.SetGlobalParameter("Player_Health", m_CurrentHealth);
+
             OnHealthSet.Invoke(this);
 
             OnGainHealth.Invoke(amount, this);
@@ -136,6 +141,8 @@ namespace Gamekit2D
                 EnableInvulnerability();
                 if (disableOnDeath) gameObject.SetActive(false);
             }
+
+            AudioManager.Instance.SetGlobalParameter("Player_Health", m_CurrentHealth);
 
             OnHealthSet.Invoke(this);
         }
@@ -160,6 +167,9 @@ namespace Gamekit2D
         {
             Data<int, bool> healthData = (Data<int, bool>)data;
             m_CurrentHealth = healthData.value1 ? startingHealth : healthData.value0;
+
+            AudioManager.Instance.SetGlobalParameter("Player_Health", m_CurrentHealth);
+
             OnHealthSet.Invoke(this);
         }
 
