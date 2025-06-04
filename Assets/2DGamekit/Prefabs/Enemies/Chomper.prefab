@@ -1082,13 +1082,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAudio: {fileID: 0}
   spriteFaceLeft: 0
-  speed: 1
+  speed: 3
   gravity: 10
   projectilePrefab: {fileID: 0}
   viewDirection: 0
   viewFov: 360
-  viewDistance: 5
-  timeBeforeTargetLost: 2
+  viewDistance: 7
+  timeBeforeTargetLost: 15
   meleeRange: 2
   meleeDamager: {fileID: 114303490521682168}
   contactDamager: {fileID: 114896150691463488}
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 960138f0450083543ad1d17e1352019d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 1
+  startingHealth: 3
   invulnerableAfterDamage: 1
   invulnerabilityDuration: 2
   disableOnDeath: 0
@@ -1198,11 +1198,11 @@ MonoBehaviour:
     Path: event:/SFX/ENEMIES/Chomper/sfx_enm_chomper_attack
   painEvent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -620035127
+      Data2: 1100402311
+      Data3: -505913420
+      Data4: 661044871
+    Path: event:/SFX/ENEMIES/Chomper/sfx_enm_chomper_pain
   deathEvent:
     Guid:
       Data1: -1481485825
