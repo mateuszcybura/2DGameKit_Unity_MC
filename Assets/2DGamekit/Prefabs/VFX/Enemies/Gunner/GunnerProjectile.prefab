@@ -5176,8 +5176,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  offset: {x: -0.004736334, y: 0}
-  size: {x: 0.59052736, y: 0.6}
+  offset: {x: 0, y: 0}
+  size: {x: 0.6, y: 0.6}
   offsetBasedOnSpriteFacing: 1
   spriteRenderer: {fileID: 0}
   canHitTriggers: 0
@@ -5190,17 +5190,17 @@ MonoBehaviour:
   OnDamageableHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114246191697033218}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Destroy
-        m_Mode: 1
+      - m_Target: {fileID: 4421510338121608968}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 523351951142790378}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -5214,32 +5214,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4421510338121608968}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 114246191697033218}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: Destroy
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
   OnNonDamageableHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114246191697033218}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Destroy
-        m_Mode: 1
+      - m_Target: {fileID: 4421510338121608968}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 523351951142790378}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -5253,17 +5253,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4421510338121608968}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 114246191697033218}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: Destroy
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &523351951142790378
 GameObject:
@@ -5312,11 +5312,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 497222915
+      Data2: 1074349758
+      Data3: -21012805
+      Data4: 520634733
+    Path: event:/SFX/ENVIRONMENT/Projectile/Enemies/Gunner/sfx_env_enm_gunner_projectile_lp
   Event: 
   EventPlayTrigger: 11
   EventStopTrigger: 12
@@ -5375,11 +5375,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 798105839
+      Data2: 1112888057
+      Data3: 1837291651
+      Data4: 477896430
+    Path: event:/SFX/ENVIRONMENT/Projectile/Enemies/Gunner/sfx_env_enm_gunner_projectile_hit
   Event: 
   EventPlayTrigger: 11
   EventStopTrigger: 0

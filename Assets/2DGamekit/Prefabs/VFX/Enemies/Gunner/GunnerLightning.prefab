@@ -749,7 +749,7 @@ PrefabInstance:
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
       propertyPath: EventReference.Path
-      value: event:/SFX/ENVIRONMENT/AOE/sfx_env_enm_boss_AOE_lightning_lp
+      value: event:/SFX/ENVIRONMENT/AOE/sfx_env_enm_gunner_lightning_AOE
       objectReference: {fileID: 0}
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
@@ -764,22 +764,22 @@ PrefabInstance:
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: 1037352327
+      value: 2092315236
       objectReference: {fileID: 0}
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1075233011
+      value: 1277898998
       objectReference: {fileID: 0}
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: -1412115317
+      value: 2120422805
       objectReference: {fileID: 0}
     - target: {fileID: 4836713485287965921, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: 883822180
+      value: 424095173
       objectReference: {fileID: 0}
     - target: {fileID: 5456375050904781880, guid: a26dfdd2556d1c746bea06e31028b9f6,
         type: 3}
