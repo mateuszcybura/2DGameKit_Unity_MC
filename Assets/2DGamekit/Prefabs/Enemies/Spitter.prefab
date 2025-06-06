@@ -24,7 +24,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4964921605943342
 Transform:
   m_ObjectHideFlags: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
   viewDirection: 0
   viewFov: 300
   viewDistance: 6
-  timeBeforeTargetLost: 10
+  timeBeforeTargetLost: 2
   meleeRange: 3
   meleeDamager: {fileID: 0}
   contactDamager: {fileID: 114516403870706252}
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 960138f0450083543ad1d17e1352019d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 3
+  startingHealth: 2
   invulnerableAfterDamage: 1
   invulnerabilityDuration: 2
   disableOnDeath: 0
