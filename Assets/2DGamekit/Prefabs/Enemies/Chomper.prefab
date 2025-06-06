@@ -1086,7 +1086,7 @@ MonoBehaviour:
   gravity: 10
   projectilePrefab: {fileID: 0}
   viewDirection: 24.08842
-  viewFov: 54.807255
+  viewFov: 48
   viewDistance: 5
   timeBeforeTargetLost: 15
   meleeRange: 2
