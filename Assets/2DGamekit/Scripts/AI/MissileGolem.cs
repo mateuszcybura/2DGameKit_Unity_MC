@@ -197,6 +197,8 @@ public class MissileGolem : MonoBehaviour
     {
         shieldUpAudioPlayer.PlayRandomSound();
 
+        bossAudio.gunnerShieldActivateLpEmitter.Play();
+
         shield.SetActive(true);
         shield.transform.localScale = Vector3.one * 0.01f;
 
@@ -216,6 +218,8 @@ public class MissileGolem : MonoBehaviour
     {
         laserFireAudioPlayer.PlayRandomSound();
 
+        bossAudio.gunnerLaserAttackEmitter.Play();
+
         var p = Instantiate(projectile);
         var dir = -beamLaser.transform.right;
         p.transform.position = beamLaser.transform.position;
@@ -225,6 +229,8 @@ public class MissileGolem : MonoBehaviour
     void ThrowGrenade()
     {
         grenadeThrowAudioPlayer.PlayRandomSound();
+
+        bossAudio.gunnerGrenadeThrowEmitter.Play();
 
         var p = Instantiate(grenade);
         p.transform.position = grenadeSpawnPoint.position;
@@ -239,6 +245,7 @@ public class MissileGolem : MonoBehaviour
     void ActivateLightning()
     {
         lightingAttackAudioPlayer.PlayRandomSound();
+        bossAudio.gunnerLightningAttackEmitter.Play();
 
         var p = Instantiate(lightning) as GameObject;
         p.transform.position = transform.position;
@@ -286,6 +293,9 @@ public class MissileGolem : MonoBehaviour
         roundDeathSource.clip = deathClip;
         roundDeathSource.loop = false;
         roundDeathSource.Play();
+
+        bossAudio.gunnerDeathBeamEmitter.Play();
+        bossAudio.gunnerSparksEmitter.Stop();
 
         foreach (var g in disableOnDeath)
             g.SetActive(false);
@@ -346,6 +356,9 @@ public class MissileGolem : MonoBehaviour
             roundDeathSource.clip = startRound2Clip;
             roundDeathSource.loop = true;
             roundDeathSource.Play();
+
+            bossAudio.gunnerGettingUpEmitter.Play();
+            bossAudio.gunnerSparksEmitter.Play();
         }
         else if (round == 3)
         {
@@ -353,6 +366,8 @@ public class MissileGolem : MonoBehaviour
             roundDeathSource.clip = startRound3Clip;
             roundDeathSource.loop = true;
             roundDeathSource.Play();
+
+            bossAudio.gunnerGettingUpEmitter.Play();
         }
     }
 
@@ -381,12 +396,16 @@ public class MissileGolem : MonoBehaviour
     {
         shieldDownAudioPlayer.PlayRandomSound();
         damageable.DisableInvulnerability();
+        bossAudio.gunnerShieldDeactivateEmitter.Play();
+        bossAudio.gunnerDeathEmitter.Play();
+        bossAudio.gunnerShieldActivateLpEmitter.Stop();
     }
 
     public void ShieldHit()
     {
         shieldSlider.value = shield.GetComponent<Damageable>().CurrentHealth;
         bossAudio.SetBossShieldParameter(shield.GetComponent<Damageable>().CurrentHealth);
+        bossAudio.gunnerShieldHitEmitter.Play();
     }
 
     public void PlayStep()

@@ -13,12 +13,19 @@ public class BossAudio : MonoBehaviour
     public EventReference gunnerLaserAttackEvent;
     public EventReference gunnerGrenadeThrowEvent;
     public EventReference gunnerLightningAttackEvent;
+    public EventReference gunnerAttackChargeEvent;
     [Space]
     public EventReference gunnerLaserHitEvent;
     [Space]
+    public EventReference gunnerGettingUpEvent;
     public EventReference gunnerHurtEvent;
     public EventReference gunnerDeathEvent;
     public EventReference gunnerDeathBeamEvent;
+    public EventReference gunnerSparksEvent;
+    [Space]
+    public EventReference gunnerShieldActivateLp;
+    public EventReference gunnerShieldHit;
+    public EventReference gunnerShieldDeactivate;
 
     [Header("FMOD Studio Event Emmiter References")]
     public StudioEventEmitter gunnerStepEmitter;
@@ -27,12 +34,19 @@ public class BossAudio : MonoBehaviour
     public StudioEventEmitter gunnerLaserAttackEmitter;
     public StudioEventEmitter gunnerGrenadeThrowEmitter;
     public StudioEventEmitter gunnerLightningAttackEmitter;
+    public StudioEventEmitter gunnerAttackChargeEmitter;
     [Space]
     public StudioEventEmitter gunnerLaserHitEmitter;
     [Space]
+    public StudioEventEmitter gunnerGettingUpEmitter;
     public StudioEventEmitter gunnerHurtEmitter;
     public StudioEventEmitter gunnerDeathEmitter;
     public StudioEventEmitter gunnerDeathBeamEmitter;
+    public StudioEventEmitter gunnerSparksEmitter;
+    [Space]
+    public StudioEventEmitter gunnerShieldActivateLpEmitter;
+    public StudioEventEmitter gunnerShieldHitEmitter;
+    public StudioEventEmitter gunnerShieldDeactivateEmitter;
 
     // Start is called before the first frame update
     void Start()
@@ -44,12 +58,19 @@ public class BossAudio : MonoBehaviour
         gunnerLaserAttackEmitter.EventReference = gunnerLaserAttackEvent;
         gunnerGrenadeThrowEmitter.EventReference = gunnerGrenadeThrowEvent;
         gunnerLightningAttackEmitter.EventReference = gunnerLightningAttackEvent;
+        gunnerAttackChargeEmitter.EventReference = gunnerAttackChargeEvent;
 
         gunnerLaserHitEmitter.EventReference = gunnerLaserHitEvent;
 
+        gunnerGettingUpEmitter.EventReference = gunnerGettingUpEvent;
         gunnerHurtEmitter.EventReference = gunnerHurtEvent;
         gunnerDeathEmitter.EventReference = gunnerDeathEvent;
         gunnerDeathBeamEmitter.EventReference = gunnerDeathBeamEvent;
+        gunnerSparksEmitter.EventReference = gunnerSparksEvent;
+
+        gunnerShieldActivateLpEmitter.EventReference = gunnerShieldActivateLp;
+        gunnerShieldHitEmitter.EventReference = gunnerShieldHit;
+        gunnerShieldDeactivateEmitter.EventReference = gunnerShieldDeactivate;
     }
 
     // Update is called once per frame

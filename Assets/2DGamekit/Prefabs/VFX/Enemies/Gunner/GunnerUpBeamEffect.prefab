@@ -24458,11 +24458,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: -496146933
+      Data2: 1277597737
+      Data3: 350427053
+      Data4: 1094893123
+    Path: event:/SFX/ENVIRONMENT/Projectile/Enemies/Gunner/sfx_env_enm_gunner_grenade_upBeam
   Event: 
   EventPlayTrigger: 11
   EventStopTrigger: 0
