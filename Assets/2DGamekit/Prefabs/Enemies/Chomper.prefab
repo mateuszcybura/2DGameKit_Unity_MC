@@ -1085,10 +1085,10 @@ MonoBehaviour:
   speed: 1
   gravity: 10
   projectilePrefab: {fileID: 0}
-  viewDirection: 0
-  viewFov: 360
+  viewDirection: 24.08842
+  viewFov: 54.807255
   viewDistance: 5
-  timeBeforeTargetLost: 2
+  timeBeforeTargetLost: 15
   meleeRange: 2
   meleeDamager: {fileID: 114303490521682168}
   contactDamager: {fileID: 114896150691463488}
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 960138f0450083543ad1d17e1352019d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 1
+  startingHealth: 3
   invulnerableAfterDamage: 1
   invulnerabilityDuration: 2
   disableOnDeath: 0
@@ -1170,44 +1170,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   footstepEvent:
     Guid:
-      Data1: -448225934
-      Data2: 1206822725
-      Data3: 643070597
-      Data4: -289440078
-    Path: event:/_Utilities/Test Events/test_1kHz_3D_action_generalSpat
+      Data1: 280822807
+      Data2: 1179882332
+      Data3: 136587406
+      Data4: -174860280
+    Path: event:/SFX/ENEMIES/Chomper/sfx_enm_chomper_fs
   idleLoopEvent:
     Guid:
-      Data1: -478131292
-      Data2: 1256588504
-      Data3: 1573746349
-      Data4: -10136393
-    Path: event:/SFX/ENEMIES/Chomper/sfx_enm_chomper_detect
+      Data1: 999791916
+      Data2: 1277678234
+      Data3: -1987623294
+      Data4: -1862398301
+    Path: event:/SFX/ENEMIES/Chomper/sfx_enm_chomper_idle_lp
   detectEvent:
     Guid:
-      Data1: -478131292
-      Data2: 1256588504
-      Data3: 1573746349
-      Data4: -10136393
+      Data1: 570528853
+      Data2: 1246218745
+      Data3: 1605975199
+      Data4: 1067079346
     Path: event:/SFX/ENEMIES/Chomper/sfx_enm_chomper_detect
   attackEvent:
     Guid:
-      Data1: -1120249805
-      Data2: 1167367848
-      Data3: 1576978305
-      Data4: 557238286
+      Data1: -100258089
+      Data2: 1215695931
+      Data3: 1415772303
+      Data4: 168013726
     Path: event:/SFX/ENEMIES/Chomper/sfx_enm_chomper_attack
   painEvent:
     Guid:
-      Data1: -1133643302
-      Data2: 1292047896
-      Data3: 1562451353
-      Data4: -1010369138
-    Path: event:/SFX/ENEMIES/Spitter/sfx_enm_spitter_pain
+      Data1: -620035127
+      Data2: 1100402311
+      Data3: -505913420
+      Data4: 661044871
+    Path: event:/SFX/ENEMIES/Chomper/sfx_enm_chomper_pain
   deathEvent:
     Guid:
-      Data1: 194818376
-      Data2: 1311944945
-      Data3: 1205365416
-      Data4: -690921023
-    Path: event:/SFX/ENEMIES/Spitter/sfx_enm_spitter_death
+      Data1: -1481485825
+      Data2: 1242236311
+      Data3: 1680798083
+      Data4: 726401245
+    Path: event:/SFX/ENEMIES/Chomper/sfx_enm_chomper_death
   isIdleLoopPlaying: 0

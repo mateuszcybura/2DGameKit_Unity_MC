@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Gamekit2D;
 using UnityEngine;
 using UnityEngine.Profiling;
+using FMODUnity;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -25,6 +26,9 @@ namespace Gamekit2D
         }
 
         const float NEIGHBOUR_TRANSFER = 0.001f;
+
+        [Header("FMOD Events")]
+        public EventReference splashEvent;
 
         public int pointPerUnits = 5;
         public Vector2 offset;
@@ -284,6 +288,8 @@ namespace Gamekit2D
 
             m_SplashSourcePool[use].transform.position = position;
 
+            RuntimeManager.PlayOneShot(splashEvent, position);
+
             //disable/enable to force the effect to
             m_SplashSourcePool[use].gameObject.SetActive(false);
             m_SplashSourcePool[use].gameObject.SetActive(true);
@@ -350,6 +356,7 @@ namespace Gamekit2D
         protected SerializedProperty m_SortingLayerProp;
         protected SerializedProperty m_SortingLayerOrderProp;
         protected SerializedProperty m_SplashPlayerPrefabProp;
+        protected SerializedProperty m_SplashEventProp;
 
         protected string[] m_SortingLayers;
         protected int m_CurrentLayer;
@@ -387,6 +394,7 @@ namespace Gamekit2D
             m_SortingLayerProp = serializedObject.FindProperty("sortingLayer");
             m_SortingLayerOrderProp = serializedObject.FindProperty("sortingLayerOrder");
             m_SplashPlayerPrefabProp = serializedObject.FindProperty("splashPlayerPrefab");
+            m_SplashEventProp = serializedObject.FindProperty("splashEvent");
         }
 
         public override void OnInspectorGUI()
@@ -449,6 +457,10 @@ namespace Gamekit2D
 
             m_PrevSize = m_WaterArea.boxCollider2D.size;
             m_PrevOffset = m_WaterArea.boxCollider2D.offset;
+
+            EditorGUILayout.Space();
+            EditorGUILayout.LabelField("FMOD Events", EditorStyles.boldLabel);
+            EditorGUILayout.PropertyField(m_SplashEventProp);
         }
     }
 #endif
