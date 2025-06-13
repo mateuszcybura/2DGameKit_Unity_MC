@@ -236,5 +236,10 @@ namespace Gamekit2D
                 m_VeryFirstStart = false;
             }
         }
+
+        private void OnDestroy()
+        {
+            movingPlatformInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
     }
 }
