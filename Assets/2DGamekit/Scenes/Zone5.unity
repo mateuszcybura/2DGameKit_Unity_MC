@@ -2488,12 +2488,17 @@ PrefabInstance:
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
+        type: 3}
+      propertyPath: EventStopTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Path
-      value: event:/MUSIC/Zone05/msc_zone05
+      value: event:/MUSIC/MainMenu_Zone1/msc_mmenu_zone01_02_03_stop
       objectReference: {fileID: 0}
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
@@ -2508,22 +2513,22 @@ PrefabInstance:
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: -2079592606
+      value: 549131707
       objectReference: {fileID: 0}
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1201942829
+      value: 1235060252
       objectReference: {fileID: 0}
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: 611466908
+      value: 1272971694
       objectReference: {fileID: 0}
     - target: {fileID: -5926198100906435946, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: -961418968
+      value: 1991362658
       objectReference: {fileID: 0}
     - target: {fileID: 2271497964563696714, guid: 9110199ae62c01f42bb440a3b1e2d769,
         type: 3}

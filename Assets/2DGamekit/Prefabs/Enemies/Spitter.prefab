@@ -203,7 +203,7 @@ MonoBehaviour:
     type: 3}
   viewDirection: 0
   viewFov: 360
-  viewDistance: 6
+  viewDistance: 4
   timeBeforeTargetLost: 6
   meleeRange: 3
   meleeDamager: {fileID: 0}
